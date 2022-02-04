@@ -1,0 +1,26 @@
+@import url(main.css);
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  width: 42%;
+  margin: 0.5rem;
+}
+.column img/*.column a*/ {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+}
+@media only screen and (min-width: 800px) {
+  .main {
+    flex-wrap: nowrap;
+  }
+  .column {
+    width: 24%;
+    min-width: 200px;
+  }
+}
